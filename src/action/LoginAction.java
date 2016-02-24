@@ -19,8 +19,10 @@ public class LoginAction extends ActionSupport implements SessionAware{
 		if(!res){
 			return "error";
 		}
-		LoginDTO dto =new LoginDTO(user_name,pass);
-		session.put("user_name",dto.getUser_name());
+		LoginDTO dto =new LoginDTO();
+		dto = dao.getLoginDTO();
+		session.put("user_id", dto.getUser_id());
+		System.out.println(dto.getUser_id());
 
 
 

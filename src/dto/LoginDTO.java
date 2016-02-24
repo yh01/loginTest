@@ -3,10 +3,7 @@ package dto;
 public class LoginDTO {
 	private String user_name;
 	private String pass;
-	public LoginDTO(String userName, String userPass){
-		this.user_name = userName;
-		this.pass = userPass;
-	}
+	private int user_id;
 	public LoginDTO(){
 
 	}
@@ -21,5 +18,11 @@ public class LoginDTO {
 	}
 	public void setPass(String pass) {
 		this.pass = pass;
+	}
+	public int getUser_id() {
+		return user_id;
+	}
+	public void setUser_id(int user_id) {
+		this.user_id = user_id;
 	}
 }

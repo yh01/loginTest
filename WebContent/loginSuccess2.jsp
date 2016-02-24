@@ -8,7 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<s:property value="#session.user_name"/>
+<s:property value="user_name"/>
 <s:property value="pass"/>
 成功
 </body>

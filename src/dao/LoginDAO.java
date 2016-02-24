@@ -23,8 +23,10 @@ public class LoginDAO {
 			if(rSet.next()){
 				String userName = rSet.getString("user_name");
 				String userPass = rSet.getString("pass");
+				int userId = rSet.getInt("user_id");
 				dto.setUser_name(userName);
 				dto.setPass(userPass);
+				dto.setUser_id(userId);
 				result = true;
 			}
 		}catch(SQLException e){
