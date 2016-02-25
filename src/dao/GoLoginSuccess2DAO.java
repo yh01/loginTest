@@ -25,6 +25,8 @@ public class GoLoginSuccess2DAO {
 			if (resultSet.next()) {
 				dto.setUser_name(resultSet.getString("user_name"));
 				dto.setPass(resultSet.getString("pass"));
+				dto.setCredit_number(resultSet.getString("credit_number"));
+				dto.setAddress(resultSet.getString("address"));
 
 				result = true;
 			}

@@ -8,8 +8,12 @@
 <title>Insert title here</title>
 </head>
 <body>
-<s:property value="user_name"/>
-<s:property value="pass"/>
+
+
+<li>user_name:  <s:property value="user_name"/></li>
+<li>pass:  <s:property value="pass"/></li>
+<li>credit_number:  <s:property value="credit_number"/></li>
+<li>address:  <s:property value="address"/></li>
 成功
 </body>
 </html>

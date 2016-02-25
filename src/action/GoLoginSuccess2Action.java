@@ -14,6 +14,8 @@ private Map<String, Object> session;
 private int user_id;
 private String pass;
 private String user_name;
+private String credit_number;
+private String address;
 	public String execute(){
 		user_id = (int)session.get("user_id");
 		GoLoginSuccess2DAO dao = new GoLoginSuccess2DAO();
@@ -21,6 +23,8 @@ private String user_name;
 		if(dao.selectToUser(user_id, dto)){
 			pass = dto.getPass();
 			user_name= dto.getUser_name();
+			credit_number = dto.getCredit_number();
+			address = dto.getAddress();
 		}
 
 
@@ -50,5 +54,17 @@ private String user_name;
 	}
 	public void setUser_name(String user_name) {
 		this.user_name = user_name;
+	}
+	public String getCredit_number() {
+		return credit_number;
+	}
+	public void setCredit_number(String credit_number) {
+		this.credit_number = credit_number;
+	}
+	public String getAddress() {
+		return address;
+	}
+	public void setAddress(String address) {
+		this.address = address;
 	}
 }
