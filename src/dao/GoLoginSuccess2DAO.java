@@ -9,9 +9,7 @@ import dto.GoLoginSuccess2DTO;
 import util.DBConnector;
 
 public class GoLoginSuccess2DAO {
-	public boolean selectToUser(int user_id, GoLoginSuccess2DTO dto) {
-
-		boolean result = false;
+	public void selectToUser(int user_id,GoLoginSuccess2DTO dto) {
 
 		Connection con = DBConnector.getConnection("loginTest");
 
@@ -27,8 +25,6 @@ public class GoLoginSuccess2DAO {
 				dto.setPass(resultSet.getString("pass"));
 				dto.setCredit_number(resultSet.getString("credit_number"));
 				dto.setAddress(resultSet.getString("address"));
-
-				result = true;
 			}
 
 		} catch (SQLException e) {
@@ -40,7 +36,6 @@ public class GoLoginSuccess2DAO {
 				e.printStackTrace();
 			}
 		}
-		return result;
 
 	}
 

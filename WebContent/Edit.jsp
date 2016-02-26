@@ -8,15 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
-<ul>
-<li>user_name:  <s:property value="user_name"/></li>
-<li>pass:  <s:property value="pass"/></li>
-<li>credit_number:  <s:property value="credit_number"/></li>
-<li>address:  <s:property value="address"/></li>
-</ul>
-<table>
-<s:form action="GoEditAction"><s:submit value="情報編集" type="button"/></s:form>
-</table>
+<s:form action="EditAction">
+<s:textfield name ="newUser_name"/>
+<s:password name ="newPass"/>
+<s:textfield name = "newAddress"/>
+<s:submit type="button"/>
+</s:form>
 </body>
 </html>

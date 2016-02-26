@@ -8,15 +8,11 @@
 <title>Insert title here</title>
 </head>
 <body>
-
 <ul>
-<li>user_name:  <s:property value="user_name"/></li>
-<li>pass:  <s:property value="pass"/></li>
-<li>credit_number:  <s:property value="credit_number"/></li>
-<li>address:  <s:property value="address"/></li>
+<li>更新する名前：<s:property value="#session.updateUser_name"/></li>
+<li>更新するパスワード：<s:property value="#session.updatePass"/></li>
+<li>更新する住所：<s:property value="#session.updateAddress"/></li>
 </ul>
-<table>
-<s:form action="GoEditAction"><s:submit value="情報編集" type="button"/></s:form>
-</table>
+<s:form action=""><s:submit type="button"/></s:form>
 </body>
 </html>

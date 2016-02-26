@@ -20,14 +20,11 @@ private String address;
 		user_id = (int)session.get("user_id");
 		GoLoginSuccess2DAO dao = new GoLoginSuccess2DAO();
 		GoLoginSuccess2DTO dto = new GoLoginSuccess2DTO();
-		if(dao.selectToUser(user_id, dto)){
-			pass = dto.getPass();
-			user_name= dto.getUser_name();
-			credit_number = dto.getCredit_number();
-			address = dto.getAddress();
-		}
-
-
+		dao.selectToUser(user_id,dto);
+		pass = dto.getPass();
+		user_name= dto.getUser_name();
+		credit_number = dto.getCredit_number();
+		address = dto.getAddress();
 		return "success";
 
 	}
