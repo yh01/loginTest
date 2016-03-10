@@ -9,9 +9,8 @@
 </head>
 <body>
 <s:form action="EditAction">
-<s:textfield name ="newUser_name"/>
+<s:textfield name ="newUserName"/>
 <s:password name ="newPass"/>
-<s:textfield name = "newAddress"/>
 <s:submit type="button"/>
 </s:form>
 </body>
