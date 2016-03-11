@@ -9,10 +9,11 @@
 </head>
 <body>
 <ul>
-<li>更新する名前：<s:property value="#session.updateUser_name"/></li>
-<li>更新するパスワード：<s:property value="#session.updatePass"/></li>
-<li>更新する住所：<s:property value="#session.updateAddress"/></li>
+<li>セッションに保持された：<s:property value="#session.sessionUserId"/></li>
+<li>セッションに保持された：<s:property value="sessionUserId"/></li>
+<li>作成する名前：<s:property value="newUserName"/></li>
+<li>作成するパスワード：<s:property value="newPass"/></li>
 </ul>
-<s:form action=""><s:submit type="button"/></s:form>
+<s:form action="EditCompletionAction"><s:submit type="button"/></s:form>
 </body>
 </html>

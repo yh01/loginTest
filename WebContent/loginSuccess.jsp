@@ -9,6 +9,7 @@
 </head>
 <body>
 <s:property value="#session.user_name"/>
+<s:property value="#session.mailaddress"/>
 <s:property value="#session.user_id"/>
 <s:property value="pass"/>
 成功
