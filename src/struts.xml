@@ -17,8 +17,13 @@
 			<result name="error">Edit.jsp</result>
 		</action>
 
-		<action name="EditCompletionAction" class="action.SuccessAction" method="execute">
-			<result name="success">Login.jsp</result>
+		<action name="EditCompletionAction" class="action.EditCompletionAction" method="execute">
+			<result name="success">EditSuccess.jsp</result>
+			<result name="error">Edit.jsp</result>
+		</action>
+
+		<action name="GoEditAction" class="action.SuccessAction" method="execute">
+			<result name="success">Edit.jsp</result>
 		</action>
 	</package>
 </struts>

@@ -21,6 +21,11 @@ public class EditAction extends ActionSupport implements SessionAware{
 		res = ERROR;
 		EditDAO dao = new EditDAO();
 		EditDTO dto = new EditDTO();
+
+		if(newUserName.equals("")||newPass.equals("")){
+			return ERROR;
+		}
+
 		rs = dao.insert(newUserName, newPass);
 		if(rs){
 			dao.selct(newUserName, dto);

@@ -13,5 +13,6 @@
 <s:password name ="newPass"/>
 <s:submit type="button"/>
 </s:form>
+<s:property value="#session.sessionUserId"/>
 </body>
 </html>

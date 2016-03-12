@@ -8,11 +8,7 @@
 <title>Insert title here</title>
 </head>
 <body>
-<ul>
-<li>セッションに保持されたId：<s:property value="#session.sessionUserId"/></li>
-<li>作成する名前：<s:property value="newUserName"/></li>
-<li>作成するパスワード：<s:property value="newPass"/></li>
-</ul>
-<s:form action="EditCompletionAction"><s:submit type="button"/></s:form>
+作成成功
+<s:form action="GoEditAction"><s:submit type="button" value="戻る"/></s:form>
 </body>
 </html>

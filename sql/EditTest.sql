@@ -5,13 +5,13 @@ drop table if exists user;
 create table user(
 	user_id int not null primary key auto_increment,
 	user_name varchar(255),
-	pass varchar(255) unique key
+	pass varchar(255) unique key not null
 );
 
 
 drop table if exists temp;
 create table temp(
 	user_id int not null primary key auto_increment,
-	user_name varchar(255),
-	pass varchar(255) unique key
+	user_name varchar(255) not null,
+	pass varchar(255) unique key not null
 );
